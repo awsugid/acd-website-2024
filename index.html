@@ -56,30 +56,28 @@
   </header>
 
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>AWS Community Day Indonesia 2024</h2>
-            <p>23 November 2024</p>
-            <a href="#about" class="btn-get-started">Mulai</a>
-          </div>
-        </div>
+      <div class="hero-background">
+          <img src="assets/img/hero-bg.jpg" alt="Hero Background" class="hero-bg-img">
+          <div class="overlay"></div>
       </div>
+      <div class="hero-content">
+          <img src="assets/img/acd.png" class="logo" title="AWS Community Day Indonesia">
+          <h4>Uniting Developers and Community, Elevating Innovation with AWS</h4><br><br>
+          <h5>23 November 2024, TBD Jakarta</h5><br>
+          <a href="#about" class="btn-get-started">Mulai</a>
+      </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+
 
     <!-- Tentang -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p><span class="description-title">Selamat Datang!</span></p>
+        <p>Selamat Datang!</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -129,71 +127,70 @@
 
     </section><!-- /About Section -->
 
-<!-- Hitung Mundur -->
-<section id="hitung" class="hitung section">
+    <!-- Hitung Mundur -->
+    <section id="hitung" class="hitung section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <p><span class="description-title">Hitung Mundur</span></p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span class="description-title">Hitung Mundur</span></p>
+      </div><!-- End Section Title -->
 
-  <!-- Countdown Timer -->
-  <div class="container">
-    <div id="countdown" class="countdown">
-      <div class="countdown-box">
-        <span id="days"></span>
-        <p>Hari</p>
-      </div>
-      <div class="countdown-box">
-        <span id="hours"></span>
-        <p>Jam</p>
-      </div>
-      <div class="countdown-box">
-        <span id="minutes"></span>
-        <p>Menit</p>
-      </div>
-      <div class="countdown-box">
-        <span id="seconds"></span>
-        <p>Detik</p>
-      </div>
-    </div>
-  </div><!-- End Countdown Timer -->
+      <!-- Countdown Timer -->
+      <div class="container">
+        <div id="countdown" class="countdown">
+          <div class="countdown-box">
+            <span id="days"></span>
+            <p>Hari</p>
+          </div>
+          <div class="countdown-box">
+            <span id="hours"></span>
+            <p>Jam</p>
+          </div>
+          <div class="countdown-box">
+            <span id="minutes"></span>
+            <p>Menit</p>
+          </div>
+          <div class="countdown-box">
+            <span id="seconds"></span>
+            <p>Detik</p>
+          </div>
+        </div>
+      </div><!-- End Countdown Timer -->
 
-</section><!-- /Hitung Section -->
+    </section><!-- /Hitung Section -->
 
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Nov 23, 2024 00:00:00").getTime();
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Nov 23, 2024 00:00:00").getTime();
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+      // Update the count down every 1 second
+      var x = setInterval(function() {
 
-    // Get today's date and time
-    var now = new Date().getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="countdown"
-    document.getElementById("days").innerText = days;
-    document.getElementById("hours").innerText = hours;
-    document.getElementById("minutes").innerText = minutes;
-    document.getElementById("seconds").innerText = seconds;
+        // Output the result in an element with id="countdown"
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
 
-    // If the count down is over, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-</script>
-
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
 
     <!-- Speakers -->
     <section id="speaker" class="speaker section">
@@ -210,7 +207,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p><span class="description-title">Agenda</span></p>
+        <p>Agenda</p>
       </div><!-- End Section Title -->
 
     </section><!-- /Agenda Section -->
@@ -220,10 +217,62 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p><span class="description-title">Sponsors</span></p>
+        <p>Sponsors</p>
       </div><!-- End Section Title -->
-
-    </section><!-- /Sponsor Section -->
+        <section id="sponsor" class="sponsor section">
+        <!-- Platinum Sponsors -->
+        <div class="container sponsor-category platinum-sponsors" data-aos="fade-up">
+          <h3><center>Platinum</center></h3>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center">
+              <img src="assets/img/sponsor/sponsor.png" alt="Platinum Sponsor 1" class="img-fluid" style="max-width: 80%;">
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center">
+              <img src="assets/img/sponsor/sponsor.png" alt="Platinum Sponsor 2" class="img-fluid" style="max-width: 80%;">
+            </div>
+          </div>
+        </div><!-- End Platinum Sponsors -->
+        </section>
+      
+        <section>
+        <!-- Gold Sponsors -->
+        <div class="container sponsor-category gold-sponsors" data-aos="fade-up">
+          <h3><center>Gold</center></h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+              <img src="assets/img/sponsor/sponsor.png" alt="Gold Sponsor 1" class="img-fluid" style="max-width: 60%;">
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+              <img src="assets/img/sponsor/sponsor.png" alt="Gold Sponsor 2" class="img-fluid" style="max-width: 60%;">
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+              <img src="assets/img/sponsor/sponsor.png" alt="Gold Sponsor 3" class="img-fluid" style="max-width: 60%;">
+            </div>
+          </div>
+        </div><!-- End Gold Sponsors -->
+        </section>
+      
+        <section>
+            <!-- Silver Sponsors -->
+            <div class="container sponsor-category silver-sponsors" data-aos="fade-up">
+              <h3><center>Silver</center></h3>
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 1" class="img-fluid" style="max-width: 40%;">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 2" class="img-fluid" style="max-width: 40%;">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 3" class="img-fluid" style="max-width: 40%;">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 4" class="img-fluid" style="max-width: 40%;">
+                </div>
+              </div>
+            </div><!-- End Silver Sponsors -->
+        </section>
+    </section>
 
     <!-- Team Section -->
     <section id="team" class="team section">
