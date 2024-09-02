@@ -686,6 +686,7 @@ section,
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 20px; /* Padding to ensure content doesn't touch the edges */
 }
 
 .hero-background {
@@ -706,14 +707,21 @@ section,
   z-index: 2;
   text-align: center;
   color: #fff;
+  padding: 20px; /* Padding to ensure content doesn't touch the edges */
 }
 
 .hero-content .logo {
-  max-height: 200px;
+  max-height: 200px; /* Keep the logo size the same */
 }
 
-.hero-content h4, .hero-content h5 {
-  margin: 0;
+.hero-content h4 {
+  font-size: 28px; /* Font size for larger screens */
+  margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.hero-content h5 {
+  font-size: 23px; /* Font size for larger screens */
+  margin: 10px 0; /* Adjust margin for spacing */
 }
 
 .hero-content .btn-get-started {
@@ -722,8 +730,8 @@ section,
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 40px;
-  margin: 30px 0 0 0;
+  padding: 8px 40px; /* Padding for larger buttons on larger screens */
+  margin: 30px 0 0 0; /* Margin for spacing on larger screens */
   border-radius: 50px;
   text-transform: uppercase;
   transition: 0.3s;
@@ -737,13 +745,57 @@ section,
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 15px; /* Less padding for very small screens */
+  }
+
   .hero-content h4 {
-    font-size: 32px;
+    font-size: 24px; /* Reduced font size for smaller screens */
+    margin: 15px 0; /* Adjusted margin for spacing */
   }
 
   .hero-content h5 {
-    font-size: 18px;
+    font-size: 16px; /* Reduced font size for smaller screens */
+    margin: 10px 0; /* Adjusted margin for spacing */
   }
+
+  .hero-content .btn-get-started {
+    padding: 8px 30px; /* Adjusted padding for smaller buttons on mobile */
+    margin: 20px 0 0 0; /* Adjusted margin for spacing */
+  }
+}
+
+/* Common button style for both sections */
+.btn-get-started {
+  color: var(--default-color);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 40px;
+  margin: 30px 0 0 0;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+.btn-get-started:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Additional styles for hero section */
+.hero .btn-get-started {
+  font-size: 14px;
+  padding: 10px 40px;
+}
+
+/* Additional styles for Call For Papers section */
+.cfp .btn-get-started {
+  font-size: 14px;
+  padding: 8px 40px;
 }
 
 
