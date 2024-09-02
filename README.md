@@ -6,12 +6,14 @@ Ini adalah repository untuk website AWS Community Day Indonesia 2024. Website in
 
 - [x] Hero
 - [x] About
-- [ ] Speaker
-- [ ] CFP
+- [ ] Speakers
+- [x] CFP
 - [ ] Agenda
-- [ ] Galeri
+- [ ] Galery
+- [ ] Code of Conduct
+- [ ] Speaker Guidelines
 - [x] Sponsor
-- [x] Tim
+- [x] Team
 - [x] FAQ
-- [x] Kontak Kami
-- [ ] Favicon dan Footer
+- [x] Contact Us
+- [x] Favicon dan Footer
