@@ -938,16 +938,19 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+
 .team .team-member {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-radius: 5px;
+  padding: 10px; /* Reduced padding */
 }
 
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  height: 150px; /* Adjusted image height */
 }
 
 .team .team-member .social {
@@ -955,7 +958,7 @@ section,
   left: 0;
   bottom: 0;
   right: 0;
-  height: 40px;
+  height: 30px; /* Reduced social icon height */
   opacity: 0;
   transition: ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 20%);
@@ -967,7 +970,7 @@ section,
 .team .team-member .social a {
   transition: color 0.3s;
   color: var(--heading-color);
-  margin: 0 10px;
+  margin: 0 5px; /* Reduced margin */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -975,43 +978,93 @@ section,
 
 .team .team-member .social a i {
   line-height: 0;
-}
-
-.team .team-member .social a:hover {
-  color: var(--accent-color);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+  font-size: 14px; /* Reduced icon size */
 }
 
 .team .team-member .member-info {
-  padding: 25px 15px;
+  padding: 15px 10px; /* Reduced padding */
   text-align: center;
 }
 
 .team .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 14px; /* Reduced font size */
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 .team .team-member .member-info span {
   display: block;
-  font-size: 13px;
+  font-size: 11px; /* Reduced font size */
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
 .team .team-member:hover .social {
   opacity: 1;
+}
+
+
+/* Community Partners Section */
+.community-partners {
+  margin-top: 30px;
+}
+
+.community-partners .community-img {
+  max-width: 60%; /* Increase the size of the images */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.community-partners .community-img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+/* Sponsor Section */
+.sponsor-category {
+  margin-bottom: 30px;
+}
+
+.sponsor-category h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--aws-color, #232f3e); /* Example of AWS color */
+}
+
+.sponsor-category .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-category .col-lg-6, 
+.sponsor-category .col-lg-4, 
+.sponsor-category .col-lg-3, 
+.sponsor-category .col-lg-2 {
+  margin-bottom: 20px;
+}
+
+.platinum-img {
+  max-width: 70%; /* Larger size for Platinum sponsors */
+}
+
+.gold-img {
+  max-width: 60%; /* Slightly smaller for Gold sponsors */
+}
+
+.silver-img {
+  max-width: 50%; /* Smaller size for Silver sponsors */
+}
+
+.bronze-img {
+  max-width: 40%; /* Smallest size for Bronze sponsors */
+}
+
+.sponsor-category img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sponsor-category img:hover {
+  transform: scale(1.1);
 }
