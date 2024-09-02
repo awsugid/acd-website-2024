@@ -1125,24 +1125,26 @@ section,
   text-align: center; /* Centers text and inline elements */
 }
 
-.button-wrapper {
-  display: flex;
-  justify-content: center; /* Centers button horizontally */
-  margin-top: 20px; /* Adjust spacing if needed */
+
+.sponsor-heading {
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Spacing below heading */
 }
 
-.btn-submit {
-  background-color: #007bff; /* Primary color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Padding around the text */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Removes underline */
-  font-weight: bold; /* Makes text bold */
-  font-size: 16px; /* Adjust font size */
-  display: inline-block; /* Makes the link behave like a button */
-  transition: background-color 0.3s ease; /* Smooth color transition */
+.platinum-heading {
+  color: #FFD700; /* Gold color for Platinum */
 }
 
-.btn-submit:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+.gold-heading {
+  color: #FFD700; /* Adjust as needed for Gold */
+}
+
+.silver-heading {
+  color: #C0C0C0; /* Silver color */
+}
+
+.bronze-heading {
+  color: #cd7f32; /* Bronze color */
 }
