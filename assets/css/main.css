@@ -1120,3 +1120,29 @@ section,
 .sponsor-category img:hover {
   transform: scale(1.1);
 }
+
+.call-for-sponsors {
+  text-align: center; /* Centers text and inline elements */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* Centers button horizontally */
+  margin-top: 20px; /* Adjust spacing if needed */
+}
+
+.btn-submit {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Makes text bold */
+  font-size: 16px; /* Adjust font size */
+  display: inline-block; /* Makes the link behave like a button */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.btn-submit:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
