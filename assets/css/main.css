@@ -1057,20 +1057,31 @@ section,
 }
 
 
-/* Community Partners Section */
 .community-partners {
-  margin-top: 30px;
+  padding: 40px 0;
 }
 
-.community-partners .community-img {
-  max-width: 60%; /* Increase the size of the images */
-  transition: transform 0.3s ease; /* Smooth animation */
+.community-img {
+  max-width: 80%; /* Adjust the size of the images */
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-.community-partners .community-img:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
+.community-img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
+@media (max-width: 768px) {
+  .community-img {
+    max-width: 70%; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .community-img {
+    max-width: 60%; /* Further adjustments for very small screens */
+  }
+}
 
 /* Sponsor Section */
 .sponsor-category {
