@@ -1159,3 +1159,36 @@ section,
 .bronze-heading {
   color: #cd7f32; /* Bronze color */
 }
+
+
+/* Mascot */
+
+.mascot-img-small {
+  max-width: 60%; /* Make the mascot image smaller */
+  height: auto; /* Keep aspect ratio */
+}
+
+.small-text {
+  font-size: 0.9rem; /* Reduce text size for compact layout */
+  line-height: 1.4; /* Adjust line spacing */
+}
+
+@media (max-width: 768px) {
+  .mascot-img-small {
+    max-width: 70%; /* Slightly larger for medium screens */
+  }
+
+  .small-text {
+    font-size: 0.85rem; /* Adjust text size for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .mascot-img-small {
+    max-width: 80%; /* Larger image for smaller screens */
+  }
+
+  .small-text {
+    font-size: 0.8rem; /* Adjust text size for small screens */
+  }
+}
