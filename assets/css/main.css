@@ -1082,7 +1082,6 @@ section,
     max-width: 60%; /* Further adjustments for very small screens */
   }
 }
-
 /* Sponsor Section */
 .sponsor-category {
   margin-bottom: 30px;
@@ -1113,15 +1112,15 @@ section,
 }
 
 .gold-img {
-  max-width: 60%; /* Slightly smaller for Gold sponsors */
+  max-width: 80%; /* Slightly smaller for Gold sponsors */
 }
 
 .silver-img {
-  max-width: 50%; /* Smaller size for Silver sponsors */
+  max-width: 90%; /* Larger size for Silver sponsors, but still smaller than Gold */
 }
 
 .bronze-img {
-  max-width: 40%; /* Smallest size for Bronze sponsors */
+  max-width: 95%; /* Larger size for Bronze sponsors, but smaller than Silver */
 }
 
 .sponsor-category img {
@@ -1135,7 +1134,6 @@ section,
 .call-for-sponsors {
   text-align: center; /* Centers text and inline elements */
 }
-
 
 .sponsor-heading {
   font-size: 2rem; /* Adjust size as needed */
@@ -1159,6 +1157,7 @@ section,
 .bronze-heading {
   color: #cd7f32; /* Bronze color */
 }
+
 
 
 /* Mascot */
