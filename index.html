@@ -422,7 +422,8 @@
         </div>
       </div><!-- End Venue Content -->
       
-
+    </section> <!-- Venue  -->
+    
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
       <span class="close">&times;</span>
@@ -430,30 +431,22 @@
     </div>
 
     <script>
-    // Function to change the large image when thumbnails are clicked
-    function changeImage(src) {
-      document.getElementById("large-image").src = src;
-    }
-
-    // Open the lightbox and display the clicked image
-    function openLightbox(src) {
-      document.getElementById("lightbox").style.display = "block";
-      document.getElementById("lightbox-img").src = src;
-    }
-
-    // Close the lightbox when clicking outside or on the close button
-    function closeLightbox() {
-      document.getElementById("lightbox").style.display = "none";
-    }
-    function openLightbox(src) {
-      document.getElementById("lightbox").style.display = "block";
-      document.getElementById("lightbox-img").src = src;
-    }
-
-    function closeLightbox() {
-      document.getElementById("lightbox").style.display = "none";
-    }
-    </script>
+      // Function to change the large image when thumbnails are clicked
+      function changeImage(src) {
+        document.getElementById("large-image").src = src;
+      }
+    
+      // Open the lightbox and display the clicked image
+      function openLightbox(src) {
+        document.getElementById("lightbox").style.display = "flex"; // Changed to 'flex'
+        document.getElementById("lightbox-img").src = src;
+      }
+    
+      // Close the lightbox when clicking outside or on the close button
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+    </script>    
 
     <!-- Sponsor -->
     <section id="sponsor" class="sponsor section">
