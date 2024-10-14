@@ -120,7 +120,6 @@
         </div>
       </div>
       
-
     </section><!-- /About Section -->
 
     <!-- Hitung Mundur -->
@@ -188,6 +187,166 @@
       }, 1000);
     </script>
 
+    <!-- Registration Section -->
+    <section id="registration" class="registration section">
+
+      <!-- Registration Title -->
+      <div class="container section-title" data-aos="fade-up">
+          <p><span class="description-title">Registration</span></p>
+      </div><!-- End Section Title -->
+
+      <!-- Ticket Categories -->
+      <div class="container ticket-categories" data-aos="fade-up">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Category</th>
+                      <th>Period</th>
+                      <th>Price</th>
+                      <th>Availability</th>
+                      <th>Action</th> <!-- Added Action Column -->
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Super Early Bird</td>
+                      <td>14 October - 26 October 2024</td>
+                      <td>Rp50,000</td>
+                      <td>100</td>
+                      <td><a href="#register" class="btn-action" aria-label="Register for Super Early Bird tickets">Coming Soon</a></td> <!-- Register Button -->
+                  </tr>
+                  <tr>
+                      <td>Early Bird</td>
+                      <td>27 October - 08 November 2024</td>
+                      <td>Rp75,000</td>
+                      <td>150</td>
+                      <td>Coming Soon</td> <!-- Register Button -->
+                  </tr>
+                  <tr>
+                      <td>Normal</td>
+                      <td>09 November - 20 November 2024</td>
+                      <td>Rp100,000</td>
+                      <td>150</td>
+                      <td>Coming Soon</td> <!-- Register Button -->
+                  </tr>
+              </tbody>
+          </table>
+          <p class="note">* Limited availability. If tickets sell out before the end date, the next category will open automatically after. </p> <!-- Note for attendees -->
+      </div><!-- End Ticket Categories -->
+
+      <!-- Benefits -->
+      <div class="container benefits" data-aos="fade-up">
+        <h3>Benefits of All Tickets:</h3>
+        <ul class="benefits-list">
+            <li>Full access to the event, including keynotes, workshops, and conferences</li>
+            <li>Exclusive swag (T-shirt, totebag, stickers, etc.)</li>
+            <li>Lunch and snacks</li>
+            <li>Certificates</li>
+        </ul>
+      </div><!-- End Benefits -->
+      
+    </section><!-- End Registration Section -->
+
+
+    <!-- Speakers -->
+    <section id="speaker" class="speaker section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span class="description-title">Speakers</span></p>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Speakers Section -->
+
+    <!-- Agenda -->
+    <section id="agenda" class="agenda section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p>Agenda</p>
+      </div><!-- End Section Title -->
+      
+    </section><!-- /Agenda Section -->
+
+    <!-- Venue -->
+    <section id="venue" class="venue section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p>Venue</p>
+      </div><!-- End Section Title -->
+
+      <!-- Venue Content -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row d-flex align-items-stretch">
+
+          <!-- Venue Pictures Grid and Large View (Left Side) -->
+          <div class="col-lg-6 d-flex flex-column">
+            <div class="venue-slider flex-grow-1">
+              <!-- Display larger image here when thumbnail is clicked -->
+              <div class="large-img-container">
+                <img id="large-image" src="assets/img/venue/venue1.png" alt="Large Venue Picture" class="large-img">
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="thumbnails-container">
+                <img src="assets/img/venue/venue1.png" alt="Venue Picture 1" class="thumb-img" onclick="changeImage(this.src)">
+                <img src="assets/img/venue/venue2.png" alt="Venue Picture 2" class="thumb-img" onclick="changeImage(this.src)">
+                <img src="assets/img/venue/venue3.png" alt="Venue Picture 3" class="thumb-img" onclick="changeImage(this.src)">
+                <img src="assets/img/venue/venue.png" alt="Venue Picture 4" class="thumb-img" onclick="changeImage(this.src)">
+              </div>
+            </div>
+          </div>
+
+          <!-- Map and Directions (Right Side) -->
+          <div class="col-lg-6 d-flex flex-column">
+            <div class="venue-info flex-grow-1">
+              <!-- Map Image -->
+              <div class="large-img-container">
+                <img src="assets/img/venue/venue-map.png" alt="Map of Event Location" class="map-img">
+              </div>
+              <div class="venue-address-container">
+                <p class="venue-address"><br>Universitas Indonesia, Jl. Prof. DR. Ir R Roosseno, Kukusan, Beji, Depok City, West Java 16425, Indonesia</p>
+                <!-- Directions Button -->
+                <div class="btn-container">
+                  <a href="https://maps.app.goo.gl/CpeR1uYzzeLsQ59t6" class="btn btn-map" target="_blank">
+                    Directions
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- End Venue Content -->
+
+    </section><!-- /Venue Section -->
+
+    <script>
+      function changeImage(src) {
+        document.getElementById("large-image").src = src;
+      }
+    </script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "block";
+      document.getElementById("lightbox-img").src = src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+    </script>
+
+
+
     <!-- Call For Papers -->
     <section id="cfp" class="cfp section">
       <!-- Section Title -->
@@ -242,26 +401,6 @@
     
       </div>
     </section>
-    <!-- Speakers -->
-    <section id="speaker" class="speaker section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <p><span class="description-title">Speakers</span></p>
-      </div><!-- End Section Title -->
-
-    </section><!-- /Speakers Section -->
-
-    <!-- Agenda -->
-    <section id="agenda" class="agenda section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <p>Agenda</p>
-      </div><!-- End Section Title -->
-      
-    </section><!-- /Agenda Section -->
-
     <!-- Sponsor -->
     <section id="sponsor" class="sponsor section">
 
@@ -286,9 +425,6 @@
             <div class="col-lg-6 col-md-6 d-flex justify-content-center">
               <img src="assets/img/sponsor/aws.png" alt="Platinum Sponsor 1" class="img-fluid platinum-img">
             </div>
-            <div class="col-lg-6 col-md-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Platinum Sponsor 2" class="img-fluid platinum-img">
-            </div>
           </div>
         </div>
       </section><!-- End Platinum Sponsors -->
@@ -300,12 +436,6 @@
           <div class="row">
             <div class="col-lg-4 col-md-4 d-flex justify-content-center">
               <img src="assets/img/sponsor/sponsor.png" alt="Gold Sponsor 1" class="img-fluid gold-img">
-            </div>
-            <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Gold Sponsor 2" class="img-fluid gold-img">
-            </div>
-            <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Gold Sponsor 3" class="img-fluid gold-img">
             </div>
           </div>
         </div>
@@ -319,15 +449,6 @@
             <div class="col-lg-3 col-md-3 col-sm-6 d-flex justify-content-center">
               <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 1" class="img-fluid silver-img">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 2" class="img-fluid silver-img">
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 3" class="img-fluid silver-img">
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Silver Sponsor 4" class="img-fluid silver-img">
-            </div>
           </div>
         </div>
       </section><!-- End Silver Sponsors -->
@@ -339,18 +460,6 @@
           <div class="row">
             <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
               <img src="assets/img/sponsor/jetbrains.png" alt="jetbrains" class="img-fluid bronze-img">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Bronze Sponsor 2" class="img-fluid bronze-img">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Bronze Sponsor 3" class="img-fluid bronze-img">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Bronze Sponsor 4" class="img-fluid bronze-img">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
-              <img src="assets/img/sponsor/sponsor.png" alt="Bronze Sponsor 5" class="img-fluid bronze-img">
             </div>
           </div>
         </div>
@@ -407,7 +516,6 @@
       </section>
             
     </section>
-
 
     <!-- Team Section -->
     <section id="team" class="team section">
@@ -738,7 +846,7 @@
           <h4>Contact Us</h4>
           <p>AWS User Group Indonesia</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+62 8525 9044 226</span></p>
-          <p><strong>Email:</strong> <span><a href="mailto:awsugid@gmail.com">awsugid@gmail.com</a></span></p>
+          <p><strong>Email:</strong> <span>awsugid@gmail.com</span></p>
         </div>
 
       </div>
