@@ -1123,6 +1123,10 @@ section,
   max-width: 95%; /* Larger size for Bronze sponsors, but smaller than Silver */
 }
 
+.venue-img {
+  max-width: 70%; /* Adjust size for Venue Partner */
+}
+
 .sponsor-category img {
   transition: transform 0.3s ease-in-out;
 }
@@ -1158,6 +1162,9 @@ section,
   color: #cd7f32; /* Bronze color */
 }
 
+.venue-heading {
+  color: #007cba; /* Adjust as needed for Venue Partner */
+}
 
 
 /* Mascot */
@@ -1240,40 +1247,80 @@ section,
   transform: scale(1.1);
 }
 
+/* Styling for the lightbox popup modal */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.lightbox-modal img {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
 /* Styling for the map and venue info */
 .venue-info {
   text-align: left;
-  flex-grow: 1; /* Ensures map and content take up remaining space */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out the content */
+  justify-content: space-between;
 }
 
 .map-img {
   width: 100%;
-  height: 300px; /* Set a fixed height for symmetry */
-  object-fit: cover; /* Maintain the image aspect ratio */
+  height: 300px;
+  object-fit: cover;
   border-radius: 5px;
 }
 
-/* New Styling for Venue Address and Button Container */
+/* Styling for Venue Address and Button Container */
 .venue-address-container {
   display: flex;
-  justify-content: space-between; /* Space between address and button */
-  align-items: center; /* Center align vertically */
-  margin-top: 10px; /* Add some space above */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .venue-address {
-  margin: 0; /* Remove default margin for better alignment */
-  flex-grow: 1; /* Allow the address to take up remaining space */
+  margin: 0;
+  flex-grow: 1;
 }
 
-/* Styling for the button container */
 .btn-container {
-  width: auto; /* Adjust button width */
-  display: flex; /* Use flexbox to align button */
-  justify-content: center; /* Center the button */
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-map {
@@ -1288,7 +1335,10 @@ section,
 
 h3 {
   margin-bottom: 20px;
-}/* Ticket Categories Section */
+}
+
+
+/* Ticket Categories Section */
 .ticket-categories {
   margin-bottom: 30px;
 }
