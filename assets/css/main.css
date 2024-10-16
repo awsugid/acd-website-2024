@@ -1338,15 +1338,22 @@ h3 {
   margin-bottom: 20px;
 }
 
-
 /* Ticket Categories Section */
+
+.text-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .ticket-categories {
   margin-bottom: 30px;
+  overflow-x: auto; /* Enable horizontal scrolling */
 }
 
 .table {
   width: 100%; /* Ensure the table takes full width */
   border-collapse: collapse; /* Collapse borders */
+  min-width: 600px; /* Minimum width to prevent shrinking */
 }
 
 .table th, .table td {
@@ -1358,7 +1365,7 @@ h3 {
 .btn-action {
   display: inline-block;
   padding: 8px 15px;
-  background-color: #4605a2; /* Bootstrap primary color */
+  background-color: #4605a2; /* Primary color */
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -1403,12 +1410,20 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .table {
+    width: auto; /* Allow the table to shrink to its content */
+  }
+
   .table th, .table td {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
 
   .benefits-list li {
     font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .btn-action {
+    padding: 8px 10px; /* Adjust button padding for mobile */
   }
 }
 
