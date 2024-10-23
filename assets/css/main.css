@@ -1528,3 +1528,24 @@ h3 {
     max-width: 100%;
   }
 }
+
+/* Agenda section styles */
+.agenda .container {
+  max-width: 1200px; /* adjust as needed */
+  margin: 0 auto; /* centers the content */
+  padding: 20px;
+}
+
+/* Adjust the width of the Sessionize schedule */
+.sessionize-schedule {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Optionally, you can adjust the iframe inside the sessionize script */
+.sessionize-schedule iframe {
+  width: 100%; /* Ensures it doesn't exceed container size */
+  max-width: 1200px; /* Adjust max width if needed */
+  height: auto; /* Keeps the aspect ratio */
+}
