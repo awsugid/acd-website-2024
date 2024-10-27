@@ -1082,9 +1082,12 @@ section,
     max-width: 60%; /* Further adjustments for very small screens */
   }
 }
+
+
 /* Sponsor Section */
 .sponsor-category {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .sponsor-category h3 {
