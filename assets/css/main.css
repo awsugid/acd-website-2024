@@ -924,15 +924,10 @@ section,
   font-size: 16px;
   line-height: 24px;
   margin: 0 30px 0 0;
-  transition: 0.3s;
+  transition: color 0.3s;
   cursor: pointer;
   display: flex;
   align-items: center;
-}
-
-.faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
-  padding-right: 5px;
 }
 
 .faq .faq-container .faq-item h3:hover {
@@ -940,16 +935,14 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
+  max-height: 0; /* Initially hidden */
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
 
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
-  overflow: hidden;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
@@ -957,8 +950,7 @@ section,
   top: 20px;
   right: 20px;
   font-size: 16px;
-  line-height: 0;
-  transition: 0.3s;
+  transition: transform 0.3s, color 0.3s;
   cursor: pointer;
 }
 
@@ -976,8 +968,7 @@ section,
 }
 
 .faq .faq-container .faq-active .faq-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
+  max-height: 300px; /* Adjust based on content height */
   opacity: 1;
   padding-top: 10px;
 }
@@ -986,6 +977,7 @@ section,
   transform: rotate(90deg);
   color: var(--accent-color);
 }
+
 
 /*--------------------------------------------------------------
 # Team Section
