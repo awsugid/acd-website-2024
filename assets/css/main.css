@@ -1049,8 +1049,14 @@ section,
 }
 
 
-.community-partners {
+.community-partners-wrapper {
+  display: flex;
+  justify-content: center;
   padding: 40px 0;
+}
+
+.community-partners {
+  padding: 20px; /* Additional padding to control spacing */
 }
 
 .community-img {
@@ -1075,6 +1081,31 @@ section,
   }
 }
 
+.media-partners {
+  padding: 40px 0;
+}
+
+.media-img {
+  max-width: 80%; /* Adjust the size of the images */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.media-img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+  .media-img {
+    max-width: 70%; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .media-img {
+    max-width: 60%; /* Further adjustments for very small screens */
+  }
+}
 
 /* Sponsor Section */
 .sponsor-category {
